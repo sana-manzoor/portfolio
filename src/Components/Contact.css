@@ -1,0 +1,117 @@
+/* General contact styling */
+.contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-header h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-header p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  
+  
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 40px 15px;
+    }
+  
+    .contact-form input, .contact-form textarea {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+   
+  }
+  
+
+
+  
+.super-button {
+  position: relative;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 15px 30px;
+  background-color: #090808;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.super-button .button-text {
+  position: relative;
+  z-index: 1;
+}
+
+.super-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: #151212;
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  color: white;
+}
+
+.super-button:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.1);
+  color: black;
+}
+
+.super-button:hover::before {
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+}
+
+.super-button:focus {
+  outline: none;
+}
+
+.super-button:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,234 @@
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about, .skills {
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about {
+  background-color: rgb(243, 241, 241);
+ 
+  
+}
+
+.skillss {
+  background-color: rgb(240, 238, 238);
+}
+
+.about:hover, .skillss:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p, ul li {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.skillss ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillss li {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 5px 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skillss li:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about, .skills {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* Education Section */
+.education {
+  padding: 20px;
+  background-color: rgb(240, 238, 238);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Section Title */
+.education-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Education Item */
+.education-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.education-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+}
+
+
+.education-item:first-child::before {
+  display: none;
+}
+
+/* Icon Style */
+.icon {
+  font-size: 1.3rem;
+  color: #4b4b4b;
+  background-color: #e0e0e0;
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.degree {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.institution, .date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+
+.skills {
+  
+ display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden; 
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+
+.skills-title {
+  
+  color: #333;
+
+}
+
+.skill-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.skill-button:hover {
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.experience {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.experience-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+ 
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 238, 238);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.experience-date {
+  font-size: 1.1rem;
+  color: #777;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.experience-content {
+  margin-top: 10px;
+}
+
+.job-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 15px;
+  }
+
+  .experience-item {
+    padding: 15px;
+  }
+}
