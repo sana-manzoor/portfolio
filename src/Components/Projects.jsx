@@ -28,7 +28,7 @@ const Projects = () => {
           <div className="project-info">
             <h3>Ecommerce Application</h3>
             <p>MERN e-commerce application with React.js front-end and Node.js/Express back-end,using MongoDB for data storage.Integrated Stripe for secure payment processing and Mail.js forautomated emails,enabling seamless online shopping functionality. </p>
-            <a href="https://github.com/project2" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="https://github.com/sana-manzoor/ecommerce_int_main_project" target="_blank" rel="noopener noreferrer" className="project-link">
               View Project
             </a>
           </div>
